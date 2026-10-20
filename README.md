@@ -124,67 +124,65 @@ Average base salary varied substantially by job role.
 * These differences are descriptive and should not be interpreted as evidence that job role alone causes the observed salary differences.
 
 ### Compensation by Tenure
-Tenure           Average Base Salary
+* Tenure           Average Base Salary
 
-0--2 years                   €76,758
-3--5 years                   €79,275
-6--8 years                   €82,926
-9--11 years                  €87,351
-12--14 years                 €88,903
+* 0--2 years                   €76,758
+* 3--5 years                   €79,275
+* 6--8 years                   €82,926
+* 9--11 years                  €87,351
+* 12--14 years                 €88,903
 Average base salary increased across the observed tenure groups.
 
 ### Compensation by Education
 Education Level     Average Base Salary
 ---
-High School                     €78,375
-Bachelor's                      €81,648
-Master's                        €86,222
-PhD                             €88,654
-The difference between the High School and PhD groups was €10,279.
-This is a descriptive association and should not be interpreted as
-evidence that education level alone determines compensation.
+* High School                     €78,375
+* Bachelor's                      €81,648
+* Master's                        €86,222
+* PhD                             €88,654
+* The difference between the High School and PhD groups was €10,279.
+This is a descriptive association and should not be interpreted as evidence that education level alone determines compensation.
 
 ---
 ## ⚖️ Gender Compensation Analysis
 The analysis found:
-Female average base salary: €83,112
-Male average base salary: €83,291
-Observed average difference: approximately €180
-Median difference: €200
-This is an unadjusted descriptive comparison, not an adjusted gender
-pay-gap analysis.
+* Female average base salary: €83,112
+* Male average base salary: €83,291
+* Observed average difference: approximately €180
+* Median difference: €200
+* This is an unadjusted descriptive comparison, not an adjusted gender
+* pay-gap analysis.
+  
 The analysis does not control for factors such as:
-Job role
-Tenure
-Education
-Performance
-Employment type
+* Job role
+* Tenure
+* Education
+* Performance
+* Employment type
 Other potentially relevant employee characteristics
-Therefore, the observed difference should not be interpreted as evidence
-of a particular cause.
-A logical next step is an adjusted compensation analysis to
-determine whether differences remain after accounting for relevant
-workforce characteristics.
+
+Therefore, the observed difference should not be interpreted as evidence of a particular cause. A logical next step is an adjusted compensation analysis to determine whether differences remain after accounting for relevant workforce characteristics.
 
 ---
 ## 📊 Dashboard
 The Excel workbook includes a dashboard covering:
-Total Employees
-Average Base Salary
-Median Base Salary
-Average Total Compensation
-Compensation by Gender
-Compensation by Department
-Compensation by Job Role
-Compensation by Tenure
-Compensation by Education
-Key Insights
-Recommendations
-Data Quality & Methodology
-Dashboard Preview
+* Total Employees
+* Average Base Salary
+* Median Base Salary
+* Average Total Compensation
+* Compensation by Gender
+* Compensation by Department
+* Compensation by Job Role
+* Compensation by Tenure
+* Compensation by Education
+  
+* Key Insights
+* Recommendations
+* Data Quality & Methodology
+* Dashboard Preview
 
 ```
-<img width="908" height="458" alt="image" src="https://github.com/user-attachments/assets/22b21031-ce7f-4d40-a60a-30b580420537" />
+<img width="908" height="458" alt="image" src="https://github.com/user-attachments/assets/97565566-ecaa-43d2-8a65-d1b1b0d7b207" />
 
 [Employee Compensation Dashboard](images/dashboard.png)
 ```
@@ -202,48 +200,53 @@ to reduce duplicate records, inconsistent categories and calculation errors.
 patterns and identify areas requiring further investigation.
 ---
 ## 🛠️ Tools & Skills Demonstrated
-Tools
-Microsoft Excel
-Power Query
-PivotTables / PivotCharts
-Excel formulas
-Excel charts
-Dashboard design
-Analytical Skills
-Data auditing
-Data cleaning
-Data validation
-Missing-value assessment
-Duplicate detection
-Outlier analysis
-Compensation analysis
-Descriptive statistics
-Comparative analysis
-Data visualization
-Business recommendations
+
+### Tools
+
+* Microsoft Excel
+* Power Query
+* PivotTables / PivotCharts
+* Excel formulas
+* Excel charts
+* Dashboard design
+* Analytical Skills
+* Data auditing
+* Data cleaning
+* Data validation
+* Missing-value assessment
+* Duplicate detection
+* Outlier analysis
+* Compensation analysis
+* Descriptive statistics
+* Comparative analysis
+* Data visualization
+* Business recommendations
 
 ---
-⚠️ Limitations
+### ⚠️ Limitations
+
 This project is a descriptive compensation analysis. It does not establish causality or determine whether observed
 compensation differences are explained by discrimination or any single factor. The dataset does not provide all information required for a comprehensive compensation-equity assessment, such as:
-Detailed job level
-Promotion history
-Performance history over time
-Location
-Relevant professional experience
-Individual salary-band position
-Hiring salary
-Salary increase history
+
+* Detailed job level
+* Promotion history
+* Performance history over time
+* Location
+* Relevant professional experience
+* Individual salary-band position
+* Hiring salary
+* Salary increase history
+  
 The findings should therefore be interpreted as patterns requiring further investigation, rather than definitive explanations of compensation differences.
 
 ---
 ## 🚀 Next Steps
+
 Future development could include:
-Adjusted compensation analysis using relevant employee characteristics.
-Salary-band positioning analysis.
-Promotion and salary progression analysis.
-Interactive PivotTables, PivotCharts and slicers.
-Time-based compensation analysis if historical salary records become available.
+* Adjusted compensation analysis using relevant employee characteristics.
+* Salary-band positioning analysis.
+* Promotion and salary progression analysis.
+* Time-based compensation analysis if historical salary records become available.
 
 ---
 ## 📁 Repository Structure
@@ -268,8 +271,11 @@ Employee-Compensation-Salary-Equity/
     └── methodology.md
 ---
 ## 📌 Project Takeaway
+
 This project demonstrates an end-to-end analytics workflow:
+
 **Raw Data → Data Audit → Power Query Cleaning → Validation → Analysis → Visualization → Business Insights → Recommendations**
+
 The project demonstrates how Excel and Power Query can transform a messy employee dataset into a structured compensation analysis that supports further HR investigation and data-driven decision-making.
 
 
