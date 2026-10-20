@@ -1,26 +1,26 @@
 # Employee-Compensation-and-Salary-Equity-Analysis
 Excel • Power Query • HR Analytics • Data Quality • Dashboard
 
-📊 Project Overview
+## 📊 Project Overview
 This project analyzes employee compensation data to identify salary patterns and examine how compensation varies across gender, department, job role, tenure, and education level.
 The project focuses not only on compensation analysis but also on data quality and validation. The original dataset contained duplicates, missing values, inconsistent categories, mixed date formats, compensation calculation discrepancies, and salary-band inconsistencies.
 Using Excel and Power Query, I transformed the raw dataset into a validated analytical dataset and developed an Excel dashboard to communicate the findings.
 > **Portfolio focus:** Data quality → transformation → analysis →
 > visualization → business insights → recommendations
 ---
-🎯 Business Objective
+## 🎯 Business Objective
 The analysis was designed to answer questions such as:
-What does the overall compensation structure look like?
-How does average and median salary vary across departments?
-Which job roles have the highest and lowest average base salaries?
-How does compensation vary with tenure?
-How does compensation vary across education levels?
-Are there observable differences in average compensation between male and female employees?
-What data-quality issues need to be addressed before compensation analysis can be trusted?
+* What does the overall compensation structure look like?
+* How does average and median salary vary across departments?
+* Which job roles have the highest and lowest average base salaries?
+* How does compensation vary with tenure?
+* How does compensation vary across education levels?
+* Are there observable differences in average compensation between male and female employees?
+* What data-quality issues need to be addressed before compensation analysis can be trusted?
 The analysis is descriptive and identifies patterns that could be investigated further.
 
 ---
-🗂️ Dataset
+## 🗂️ Dataset
 Attribute          Details
 ---
 Original records   5,000
@@ -47,7 +47,7 @@ Salary Band
 Hire Date
 
 ---
-🧹 Data Preparation & Quality Checks
+### 🧹 Data Preparation & Quality Checks
 The raw dataset was audited and transformed using Excel Power Query.
 Key issues identified
 10 duplicate Employee ID records:
@@ -61,21 +61,21 @@ Mixed Hire Date formats
 Invalid performance-rating values
 Salary-band inconsistencies
 Salary outliers
-Key cleaning actions:
-Duplicates
-10 duplicate Employee ID records were removed, resulting in 4,990 unique employee records.
+
+### Key cleaning actions:
+
+* Duplicates: 10 duplicate Employee ID records were removed, resulting in 4,990 unique employee records.
 Missing values: Missing values were investigated individually. Where reliable source information allowed a value to be resolved, it was corrected. Where no reliable correction was possible, the value was retained as null rather than introducing an unsupported assumption.
 Compensation validation: Total Compensation was validated and recalculated using:
 `Base Salary + Bonus`
 Missing bonus values were resolved where Total Compensation provided sufficient information.
-Salary-band validation: Salary bands were checked against defined salary ranges and inconsistent
-classifications were corrected.
+Salary-band validation: Salary bands were checked against defined salary ranges and inconsistent classifications were corrected.
 Date standardization: Mixed Hire Date formats were converted into a consistent Date format.
 Outlier analysis: Base Salary outliers were identified using the Interquartile Range (IQR) method. Identified outliers were retained where there was insufficient evidence that they represented data-entry errors.
 Final validation: The cleaned dataset contains 4,990 employee records with no Power Query errors.
 
 ---
-📈 Key Findings
+### 📈 Key Findings
 Overall Compensation
 Metric                          Result
 ---
@@ -97,7 +97,7 @@ Sales had the highest median base salary at €89,700.
 Compensation by Job Role
 Average base salary varied substantially by job role.
 
-Job Role                  Average Base Salary
+### Job Role                  Average Base Salary
 ---
 Sales Representative                  €63,695
 Marketing Specialist                  €65,351
@@ -121,7 +121,7 @@ IT Manager                           €103,334
 The highest average base salary was observed for IT Managers (€103,334), while the lowest was observed for Sales Representatives (€63,695).
 These differences are descriptive and should not be interpreted as evidence that job role alone causes the observed salary differences.
 
-Compensation by Tenure
+### Compensation by Tenure
 Tenure           Average Base Salary
 
 0--2 years                   €76,758
@@ -131,7 +131,7 @@ Tenure           Average Base Salary
 12--14 years                 €88,903
 Average base salary increased across the observed tenure groups.
 
-Compensation by Education
+### Compensation by Education
 Education Level     Average Base Salary
 ---
 High School                     €78,375
@@ -143,7 +143,7 @@ This is a descriptive association and should not be interpreted as
 evidence that education level alone determines compensation.
 
 ---
-⚖️ Gender Compensation Analysis
+## ⚖️ Gender Compensation Analysis
 The analysis found:
 Female average base salary: €83,112
 Male average base salary: €83,291
@@ -165,7 +165,7 @@ determine whether differences remain after accounting for relevant
 workforce characteristics.
 
 ---
-📊 Dashboard
+## 📊 Dashboard
 The Excel workbook includes a dashboard covering:
 Total Employees
 Average Base Salary
@@ -186,21 +186,20 @@ Dashboard Preview
 
 [Employee Compensation Dashboard](images/dashboard.png)
 ```
-💡 Recommendations
-1. Conduct an adjusted compensation analysis: Control for job role, tenure, education, performance, employment type
+## 💡 Recommendations
+### 1. Conduct an adjusted compensation analysis: Control for job role, tenure, education, performance, employment type
 and other relevant variables to determine whether observed compensation differences remain after accounting for workforce characteristics.
-2. Review compensation by job role and department: Compare employee salaries with established salary ranges, internal
+### 2. Review compensation by job role and department: Compare employee salaries with established salary ranges, internal
 benchmarks and salary-band positioning.
-3. Monitor compensation progression: Examine salary progression, promotions and tenure-related increases to
+### 3. Monitor compensation progression: Examine salary progression, promotions and tenure-related increases to
 determine whether compensation progression is applied consistently.
-4. Investigate education differences in context: Explore whether education-related differences reflect job requirements,
-experience, role distribution or other workforce characteristics.
-5. Strengthen compensation data governance: Introduce standardized data-entry rules and recurring validation checks
+### 4. Investigate education differences in context: Explore whether education-related differences reflect job requirements, experience, role distribution or other workforce characteristics.
+### 5. Strengthen compensation data governance: Introduce standardized data-entry rules and recurring validation checks
 to reduce duplicate records, inconsistent categories and calculation errors.
-6. Establish recurring compensation monitoring: Refresh the analysis periodically to monitor changes in compensation
+### 6. Establish recurring compensation monitoring: Refresh the analysis periodically to monitor changes in compensation
 patterns and identify areas requiring further investigation.
 ---
-🛠️ Tools & Skills Demonstrated
+## 🛠️ Tools & Skills Demonstrated
 Tools
 Microsoft Excel
 Power Query
@@ -236,7 +235,7 @@ Salary increase history
 The findings should therefore be interpreted as patterns requiring further investigation, rather than definitive explanations of compensation differences.
 
 ---
-🚀 Next Steps
+## 🚀 Next Steps
 Future development could include:
 Adjusted compensation analysis using relevant employee characteristics.
 Salary-band positioning analysis.
@@ -245,7 +244,7 @@ Interactive PivotTables, PivotCharts and slicers.
 Time-based compensation analysis if historical salary records become available.
 
 ---
-📁 Repository Structure
+## 📁 Repository Structure
 
 Employee-Compensation-Salary-Equity/
 │
@@ -266,9 +265,9 @@ Employee-Compensation-Salary-Equity/
 └── documentation/
     └── methodology.md
 ---
-📌 Project Takeaway
+## 📌 Project Takeaway
 This project demonstrates an end-to-end analytics workflow:
-Raw Data → Data Audit → Power Query Cleaning → Validation → Analysis → Visualization → Business Insights → Recommendations
+**Raw Data → Data Audit → Power Query Cleaning → Validation → Analysis → Visualization → Business Insights → Recommendations**
 The project demonstrates how Excel and Power Query can transform a messy employee dataset into a structured compensation analysis that supports further HR investigation and data-driven decision-making.
 
 
