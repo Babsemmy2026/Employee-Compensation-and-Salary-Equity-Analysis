@@ -181,23 +181,17 @@ The Excel workbook includes a dashboard covering:
 * Data Quality & Methodology
 * Dashboard Preview
 
-```
 <img width="908" height="458" alt="image" src="https://github.com/user-attachments/assets/97565566-ecaa-43d2-8a65-d1b1b0d7b207" />
 
-[Employee Compensation Dashboard](images/dashboard.png)
-```
+------
 ## 💡 Recommendations
-### 1. Conduct an adjusted compensation analysis: Control for job role, tenure, education, performance, employment type
-and other relevant variables to determine whether observed compensation differences remain after accounting for workforce characteristics.
-### 2. Review compensation by job role and department: Compare employee salaries with established salary ranges, internal
-benchmarks and salary-band positioning.
-### 3. Monitor compensation progression: Examine salary progression, promotions and tenure-related increases to
-determine whether compensation progression is applied consistently.
-### 4. Investigate education differences in context: Explore whether education-related differences reflect job requirements, experience, role distribution or other workforce characteristics.
-### 5. Strengthen compensation data governance: Introduce standardized data-entry rules and recurring validation checks
-to reduce duplicate records, inconsistent categories and calculation errors.
-### 6. Establish recurring compensation monitoring: Refresh the analysis periodically to monitor changes in compensation
-patterns and identify areas requiring further investigation.
+
+* Investigate Gender Pay Differences at Job-Role Level.
+* Review Compensation Differences Across Departments.
+* Review Salary Progression and Tenure.
+* Investigate Salary Differences Across Education Levels.
+* Strengthen Compensation Data Quality and Monitoring .
+* Review Job Roles with Unusual Salary Patterns.
 ---
 ## 🛠️ Tools & Skills Demonstrated
 
@@ -251,6 +245,7 @@ Future development could include:
 ---
 ## 📁 Repository Structure
 
+```text
 Employee-Compensation-Salary-Equity/
 │
 ├── README.md
@@ -269,7 +264,7 @@ Employee-Compensation-Salary-Equity/
 │
 └── documentation/
     └── methodology.md
----
+```
 ## 📌 Project Takeaway
 
 This project demonstrates an end-to-end analytics workflow:
@@ -277,5 +272,14 @@ This project demonstrates an end-to-end analytics workflow:
 **Raw Data → Data Audit → Power Query Cleaning → Validation → Analysis → Visualization → Business Insights → Recommendations**
 
 The project demonstrates how Excel and Power Query can transform a messy employee dataset into a structured compensation analysis that supports further HR investigation and data-driven decision-making.
+
+---
+## Author
+
+**Barbara**
+
+Data Analyst with a passion for transforming data into actionable business insights using SQL, Python, and data visualization tools.
+
+If you found this project interesting or have feedback, feel free to connect or reach out.
 
 
