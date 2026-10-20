@@ -23,103 +23,105 @@ The analysis is descriptive and identifies patterns that could be investigated f
 ## 🗂️ Dataset
 Attribute          Details
 ---
-Original records   5,000
-Cleaned records    4,990
-Variables          15
-Primary tools      Excel & Power Query
-Analysis           Excel formulas & PivotTables
-Visualization      Excel charts & dashboard
-Key Variables
-Employee ID
-Gender
-Age
-Department
-Job Role
-Education Level
-Years at Company
-Years in Role
-Performance Rating
-Employment Type
-Base Salary
-Bonus
-Total Compensation
-Salary Band
-Hire Date
+* Original records   5,000
+* Cleaned records    4,990
+* Variables          15
+  
+### Primary tools      Excel & Power Query
+### Analysis           Excel formulas & PivotTables
+### Visualization      Excel charts & dashboard
+
+**Key Variables**
+* Employee ID
+* Gender
+* Age
+* Department
+* Job Role
+* Education Level
+* Years at Company
+* Years in Role
+* Performance Rating
+* Employment Type
+* Base Salary
+* Bonus
+* Total Compensation
+* Salary Band
+* Hire Date
 
 ---
 ### 🧹 Data Preparation & Quality Checks
 The raw dataset was audited and transformed using Excel Power Query.
-Key issues identified
-10 duplicate Employee ID records:
-Missing department values
-Missing education levels
-Missing and invalid Years in Role values
-Missing bonus values
-Total Compensation calculation mismatches
-Inconsistent employment-type labels
-Mixed Hire Date formats
-Invalid performance-rating values
-Salary-band inconsistencies
-Salary outliers
+**Key issues identified**
+* 10 duplicate Employee ID records:
+* Missing department values
+* Missing education levels
+* Missing and invalid Years in Role values
+* Missing bonus values
+* Total Compensation calculation mismatches
+* Inconsistent employment-type labels
+* Mixed Hire Date formats
+* Invalid performance-rating values
+* Salary-band inconsistencies
+* Salary outliers
 
 ### Key cleaning actions:
 
 * Duplicates: 10 duplicate Employee ID records were removed, resulting in 4,990 unique employee records.
-Missing values: Missing values were investigated individually. Where reliable source information allowed a value to be resolved, it was corrected. Where no reliable correction was possible, the value was retained as null rather than introducing an unsupported assumption.
-Compensation validation: Total Compensation was validated and recalculated using:
-`Base Salary + Bonus`
+* Missing values: Missing values were investigated individually. Where reliable source information allowed a value to be resolved, it was corrected. Where no reliable correction was possible, the value was retained as null rather than introducing an unsupported assumption.
+* Compensation validation: Total Compensation was validated and recalculated using: `Base Salary + Bonus`
 Missing bonus values were resolved where Total Compensation provided sufficient information.
-Salary-band validation: Salary bands were checked against defined salary ranges and inconsistent classifications were corrected.
-Date standardization: Mixed Hire Date formats were converted into a consistent Date format.
-Outlier analysis: Base Salary outliers were identified using the Interquartile Range (IQR) method. Identified outliers were retained where there was insufficient evidence that they represented data-entry errors.
-Final validation: The cleaned dataset contains 4,990 employee records with no Power Query errors.
+* Salary-band validation: Salary bands were checked against defined salary ranges and inconsistent classifications were corrected.
+* Date standardization: Mixed Hire Date formats were converted into a consistent Date format.
+* Outlier analysis: Base Salary outliers were identified using the Interquartile Range (IQR) method. Identified outliers were retained where there was insufficient evidence that they represented data-entry errors.
+* Final validation: The cleaned dataset contains 4,990 employee records with no Power Query errors.
 
 ---
 ### 📈 Key Findings
 Overall Compensation
 Metric                          Result
 ---
-Total employees                  4,990
-Average base salary            €83,201
-Median base salary             €81,900
-Average bonus                   €7,632
-Average total compensation     €90,833
-Median total compensation      €89,100
-Compensation by Department
-Average base salary ranged from:
-Marketing: €79,217
-HR: €80,990
-Operations: €81,443
-Finance: €83,368
-Sales: €85,945
-IT: €87,796
-Sales had the highest median base salary at €89,700.
-Compensation by Job Role
+* Total employees                  4,990
+* Average base salary            €83,201
+* Median base salary             €81,900
+* Average bonus                   €7,632
+* Average total compensation     €90,833
+* Median total compensation      €89,100
+* Compensation by Department
+### Average base salary ranged from:
+* Marketing: €79,217
+* HR: €80,990
+* Operations: €81,443
+* Finance: €83,368
+* Sales: €85,945
+* IT: €87,796
+* Sales had the highest median base salary at €89,700.
+  
+### Compensation by Job Role
 Average base salary varied substantially by job role.
 
 ### Job Role                  Average Base Salary
 ---
-Sales Representative                  €63,695
-Marketing Specialist                  €65,351
-HR Specialist                         €69,098
-Operations Specialist                 €69,357
-IT Specialist                         €73,474
-HR Analyst                            €74,371
-Operations Analyst                    €75,707
-Accountant                            €75,798
-Marketing Analyst                     €76,120
-Financial Analyst                     €76,122
-Data Analyst                          €80,142
-Account Manager                       €95,634
-Software Developer                    €92,889
-Marketing Manager                     €97,243
-Sales Manager                         €97,734
-HR Manager                            €98,379
-Operations Manager                    €99,871
-Finance Manager                      €100,556
-IT Manager                           €103,334
-The highest average base salary was observed for IT Managers (€103,334), while the lowest was observed for Sales Representatives (€63,695).
-These differences are descriptive and should not be interpreted as evidence that job role alone causes the observed salary differences.
+* Sales Representative                  €63,695
+* Marketing Specialist                  €65,351
+* HR Specialist                         €69,098
+* Operations Specialist                 €69,357
+* IT Specialist                         €73,474
+* HR Analyst                            €74,371
+* Operations Analyst                    €75,707
+* Accountant                            €75,798
+* Marketing Analyst                     €76,120
+* Financial Analyst                     €76,122
+* Data Analyst                          €80,142
+* Account Manager                       €95,634
+* Software Developer                    €92,889
+* Marketing Manager                     €97,243
+* Sales Manager                         €97,734
+* HR Manager                            €98,379
+* Operations Manager                    €99,871
+* Finance Manager                      €100,556
+* IT Manager                           €103,334
+* The highest average base salary was observed for IT Managers (€103,334), while the lowest was observed for Sales Representatives (€63,695).
+* These differences are descriptive and should not be interpreted as evidence that job role alone causes the observed salary differences.
 
 ### Compensation by Tenure
 Tenure           Average Base Salary
