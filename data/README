@@ -1,0 +1,15 @@
+## Data
+
+### Overview
+
+This folder documents the dataset used in the Compensation Equity Analysis project.
+
+## Dataset Contents
+
+The dataset contains employee compensation information used to analyse base salaries and compensation patterns across employee groups.
+
+## Data Preparation
+
+The dataset was reviewed and prepared using Microsoft Excel and Power Query.
+
+The preparation process included checking missing values, standardising text fields, reviewing data types, and validating records.
