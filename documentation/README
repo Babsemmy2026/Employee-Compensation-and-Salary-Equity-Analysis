@@ -1,0 +1,26 @@
+## Project Documentation
+
+## Overview
+
+This folder documents the data preparation, quality checks, validation procedures, and analytical limitations of the 
+Compensation Equity Analysis project.
+
+## Data Quality Checks
+
+The analysis included reviewing:
+
+Missing values.
+Duplicate records.
+Inconsistent text values.
+Data types and formatting.
+Consistency between summary calculations and supporting analyses.
+Validation
+
+Reported metrics should be checked against the cleaned dataset and the underlying calculations before publication.
+
+Any differences between Excel summaries, formulas, and PivotTables should be investigated and resolved where possible.
+
+Analytical Limitations
+
+Salary differences should not automatically be interpreted as evidence of inequity or discrimination. Further analysis 
+of relevant employee and job characteristics may be necessary.
